@@ -1,0 +1,220 @@
+body {background-color:#888; height: 100%; width: 100%;}
+
+.fullWidth {width: 100%;}
+
+.center {text-align: center; margin: auto;}
+
+.spacer {
+height:10px;
+width:100%;
+}
+
+/*if using video */
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Button Images */
+#poon-button-1 {
+background-image: url('img/button-poon-1.png');
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+height: 100%;
+}
+
+#poon-button-2 {
+background-image: url('img/button-poon-2.png');
+background-position: center;
+background-size: contain;
+height: 100%;
+background-repeat: no-repeat;
+}
+
+#poon-button-3 {
+background-image: url('img/button-poon-3.png');
+background-position: center;
+background-size: contain;
+height: 100%;
+background-repeat: no-repeat;
+}
+
+#poon-button-4 {
+background-image: url('img/button-poon-4.png');
+background-position: center;
+background-size: contain;
+height: 100%;
+background-repeat: no-repeat;
+}
+
+/* Button Hover Styles */
+#poon-button-1:hover {
+background-image: url('img/poon-kick-1.png');
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+height: 100%;
+}
+
+#poon-button-2:hover {
+background-image: url('img/poon-kick-2.png');
+background-position: center;
+background-size: contain;
+height: 100%;
+background-repeat: no-repeat;
+}
+
+#poon-button-3:hover {
+background-image: url('img/poon-kick-3.png');
+background-position: center;
+background-size: contain;
+height: 100%;
+background-repeat: no-repeat;
+}
+
+#poon-button-4:hover {
+background-image: url('img/poon-kick-4.png');
+background-position: center;
+background-size: contain;
+height: 100%;
+background-repeat: no-repeat;
+}
+
+
+/* Mobile GIF styles */
+#music-gif {
+background-image: url('img/music.gif');
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+height: 100%;
+}
+
+#video-gif {
+background-image: url('img/video.gif');
+background-position: center;
+background-size: contain;
+height: 100%;
+background-repeat: no-repeat;
+}
+
+#merch-gif {
+background-image: url('img/merch.gif');
+background-position: center;
+background-size: contain;
+height: 100%;
+background-repeat: no-repeat;
+}
+
+#press-gif {
+background-image: url('img/press.gif');
+background-position: center;
+background-size: contain;
+height: 100%;
+background-repeat: no-repeat;
+}
+
+/* Hover Button Wrapper */
+/* Hide for mobile */
+.button-wrapper {
+display:none;
+width: 50%;
+margin: 0 auto;
+height: 300px;
+position: relative;
+top: -20px;
+}
+
+/*Hide bandcamp player for mobile */
+#bcPlayerBig {
+display: none; }
+
+/*Hide logo for mobile */
+.logo {display: none;}
+
+/*/////////// CONDITIONAL FORMATTING \\\\\\\\\\\\\ */
+
+/* Conditional formatting for small screens */
+@media (max-width:650px){
+.logo {
+display: none;
+}
+
+#bcPlayerLite {
+display:none; }
+
+#bcPlayerBig {
+display: flex; }
+
+.button-wrapper {
+display:none;
+width: 100%;
+margin: 0 auto;
+height: 300px;
+margin-top: -50px;
+position: relative;
+}
+.pooncatlogo {
+width:20%;}
+
+
+/* Show GIFs for mobile */
+.gif-wrapper {
+display:flex;
+margin: 0 auto;
+height: 360px;
+margin-bottom: -50px;
+position: relative;
+}
+}
+ 
+/* Conditional Formatting for Large Screens */
+@media (min-width:650px) {
+.logo {
+display: block;}
+
+/* Show hover buttons */
+.button-wrapper {
+display:flex;
+width: 700px;
+margin: 0 auto;
+height: 300px;
+position: relative;
+text-align: center;
+}
+
+/* Hide mobile buttons */
+.gif-wrapper {
+display:none;
+width: 100%;
+margin: 0 auto;
+height: 300px;
+margin-top: -50px;
+position: relative;
+}
+
+/* Formatting for img tag buttons
+.button-poon img {
+width: 20%;
+}
+
+.button {
+width:100%;
+height:auto;
+} */
+
+.pooncatlogo {
+width: 8%;
+}
+
+}
