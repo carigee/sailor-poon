@@ -127,7 +127,7 @@ background-repeat: no-repeat;
 /* Hover Button Wrapper */
 /* Hide for mobile */
 .button-wrapper {
-display:none;
+display:flex;
 width: 50%;
 margin: 0 auto;
 height: 300px;
