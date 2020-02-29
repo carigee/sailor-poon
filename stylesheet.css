@@ -145,10 +145,12 @@ display: none; }
 /*/////////// CONDITIONAL FORMATTING \\\\\\\\\\\\\ */
 
 /* Conditional formatting for small screens */
-@media (max-width:640px){
+@media (max-width:460px){
 .logo {
 display: none;
 }
+
+body {width:100%}
 
 #bcPlayerLite {
 display:none; }
@@ -169,18 +171,53 @@ position: relative;
 width:20%;}
 
 
+
 /* Show GIFs for mobile */
 .gif-wrapper {
 display:flex;
+height: 360px;
 margin: 0 auto;
-height: 400px;
-margin-top: -20%;
-margin-bottom: -20%;
+position: relative;
+top: -60px;
 }
 }
+
+@media (max-width:350px) {
+	.gif-wrapper {
+		top: -140px;
+		margin-bottom: -35%;
+	}
+	
+ @media (min-width:460px) {
+	 .logo {
+display: block;}
+
+/* Show hover buttons */
+.button-wrapper {
+display:flex;
+width: 400px;
+margin: 0 auto;
+height: 200px;
+position: relative;
+text-align: center;
+}
+
+/* Hide mobile buttons */
+.gif-wrapper {
+display:none;
+width: 100%;
+margin: 0 auto;
+height: 300px;
+position: relative;
+}
+
+.pooncatlogo {
+width: 8%;
+}
+ }
  
 /* Conditional Formatting for Large Screens */
-@media (min-width:640px) {
+@media (min-width:730px) {
 .logo {
 display: block;}
 
